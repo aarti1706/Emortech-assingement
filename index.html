@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./reset-password.js"></script>
+</head>
+<body class="wrapper">
+  <header class=" navbar bg-[#1da1f2] flex justify-between items-center">
+    <div class="header-logo pl-8 pr-1.5">
+        <img src="./header.logo.png">
+    </div> 
+    <div class="nav-items">
+        <ul class="flex">
+            <li class="mr-8 font-bold">Join a Race</li>
+            <li class="mr-8 font-bold">Leaderboard</li>
+            <button class="login-button bg-[#f9fafb] text-black mr-8 text-center font-bold">Login</button>
+        </ul>
+    </div>
+    
+  </header>
+  <main class="login-page flex justify-center ">
+    <div class="login-form mt-20">
+   
+   <div id="login" class="login-page">
+    <h1 class="text-2xl font-bold"> Password Reset</h1>
+    
+    
+    <form  action="#" method="get" id="form-submit" onsubmit ="return verifyPassword()">
+        <div class="input-wrap mt-4">
+        <label class=" text-sm font-bold"> NEW PASSWORD</label>
+        <input class="form-input" type="password" id="pswd">
+        </div>
+        <div class="input-wrap mt-4">
+        <label class="mt-2 text-sm font-bold"> RE-ENTER NEW PASSWORD</label>
+        <input class="form-input" type="password" id="re-pswd">
+        <p id="alert" class="text-red-400"></p>
+        </div>
+
+        
+        <button class="form-button bg-black mt-10 text-white font-bold py-2 px-4 rounded">
+            Reset Password
+          </button>
+        
+      </form>
+   </div>   
+   
+   <div id="pwd-changed" class="successfull text-center">
+      <h1 class="text-2xl font-bold" >Password Change</h1>
+      <p class="font-medium pt-2">Your password has been updated! Now get back 
+        in the driver seat, racers are waiting for you!</p>
+        <button   class="form-button bg-black mt-10 text-white font-semibold py-2 px-4 rounded">
+            Join a Race
+          </button>
+   </div>
+    
+    </div>
+  </main>
+  <section class="bg-slate-200">
+
+  </section>
+  
+  <footer class="bg-[#1da1f2] flex justify-between items-center">
+    <div class="footer-wrap py-4">
+        <ul class="flex justify-center items-center text-white font-bold">
+            <li class=" mr-6"> About Us </li>
+            <li class=" mr-6" > Privacy Policy</li>
+            <li class=" mr-6"> Tutorials </li>
+            <li class="  mr-6"> Terms of Service </li>
+        </ul>
+    </div>
+  </footer>
+
+  <script>
+    function getData(e) {
+    e.preventDefault();
+}
+  </script>
+</body>
+</html>
